@@ -3,6 +3,7 @@ package com.udacity.sandwichclub;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -35,6 +36,7 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         String[] sandwiches = getResources().getStringArray(R.array.sandwich_details);
+        /*
         String json = sandwiches[position];
         Sandwich sandwich = JsonUtils.parseSandwichJson(json);
         if (sandwich == null) {
@@ -48,7 +50,7 @@ public class DetailActivity extends AppCompatActivity {
                 .load(sandwich.getImage())
                 .into(ingredientsIv);
 
-        setTitle(sandwich.getMainName());
+        setTitle(sandwich.getMainName());*/
     }
 
     private void closeOnError() {
@@ -57,6 +59,6 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void populateUI() {
-
+        Log.d("ADX2099","Si entra a este metodo");
     }
 }
